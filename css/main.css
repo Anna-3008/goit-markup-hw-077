@@ -16,14 +16,6 @@
   --backdrop-color: rgba(0, 0, 0, 0.2);
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,6 +64,14 @@ address {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -635,13 +635,12 @@ address {
   color: var(--primary-white-color);
 }
 
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .address {
   line-height: 1.71;
   color: var(--primary-white-color);
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address__link {
@@ -746,6 +745,7 @@ address {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
+  color: var(--primary-white-color);
 }
 .form__input:focus {
   outline: none;
