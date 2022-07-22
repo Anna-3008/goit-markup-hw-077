@@ -35,14 +35,14 @@
 .address__link {
     line-height: 1.71;
     color: var(--footer-contact-color);
-}
 
-.address__link:hover,
-.address__link:focus {
-    color: var(--accent-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 /* Social */
@@ -78,21 +78,20 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--primary-white-color);
     background-color: var(--background-social-icon);
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+         background-color: var(--accent-color);
+    }
 }
 
-.social__icon {
-    fill: currentColor;
-}
-
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--accent-color);
+.social__link--white {
+    color: var(--primary-white-color);
 }
 
 /* Subscription */
@@ -122,16 +121,16 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
-}
 
-.form__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--footer-contact-color);
-}
+    &:focus {
+        outline: none;
+    }
 
-.form__input:focus {
-    outline: none;
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--footer-contact-color);
+    }
 }
 
 .form__button {

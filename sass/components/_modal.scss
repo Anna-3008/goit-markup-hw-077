@@ -45,15 +45,15 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .icon-close {
     fill: currentColor;
-}
-
-.button-close:hover,
-.button-close:focus {
-    color: var(--accent-color);
 }
 
 .modal-form {
